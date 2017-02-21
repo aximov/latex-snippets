@@ -17,43 +17,64 @@
 "scope": {
 		"prefix": "scope",
 		"body": [
-			"\\( $1 \\) "
+			"\\( $1 \\)"
 		],
 		"description": "MathJax scope"
 	},
 "mathrm": {
 		"prefix": "mathrm",
 		"body": [
-			"\\mathrm{ $1 } $0"
+			"\\mathrm{ $1 }$0"
 		],
 		"description": "mathrm"
 	},
 "unit symbol": {
 		"prefix": "symbol",
 		"body": [
-			"\\, \\mathrm{ $1 } $0"
+			"\\, \\mathrm{ $1 }$0"
 		],
 		"description": "symbol"
 	},
 "quantity": {
 		"prefix": "quantity",
 		"body": [
-			"\\( $1 \\, \\mathrm{ $2 } \\) $0"
+			"\\( $1 \\, \\mathrm{ $2 } \\)$0"
 		],
 		"description": "MathJax Quantity"
 	},
 "letter": {
 		"prefix": "letter",
 		"body": [
-			"\\( \\mathrm{ $1 } \\) $0"
+			"\\( \\mathrm{ $1 } \\)$0"
 		],
 		"description": "MathJax letter"
+	},
+"A": {
+		"prefix": "a-letter",
+		"body": [
+			"\\( \\mathrm{ A } \\)$0"
+		],
+		"description": "MathJax letter A"
+	},
+"B": {
+		"prefix": "b-letter",
+		"body": [
+			"\\( \\mathrm{ B } \\)$0"
+		],
+		"description": "MathJax letter B"
 	},
 "ana": {
 		"prefix": "ana",
 		"body": [
-			"[　$1　] $0"
+			"[　$1　]$0"
 		],
 		"description": "MathJax 穴埋めの穴"
+	},
+"dfraction": {
+		"prefix": "dfra",
+		"body": [
+			"\\displaystyle \\frac {$1} {$2}$0"
+		],
+		"description": "MathJax 分数"
 	}
 }
